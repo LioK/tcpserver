@@ -17,3 +17,12 @@ In the command prompt that appears, enter:
 - `echo` to print received messages
 - `clean` to clear the data file
 - `stop` to exit
+
+To send data to the server:
+
+    echo "Your data goes here" >> data.txt
+    nc 127.0.0.1 10000 < data.txt
+
+To check that port 10000 is indeed open:
+
+    nmap 127.0.0.1/32
