@@ -54,7 +54,7 @@ class server(Cmd):
 
     def do_echo(self, args):
         '''Echo the last data received'''
-        lastfile = open("tcpserverdata.file", "r", 1)
+        lastfile = open("tcpserverdata.file", "w+", 1)
         contents = lastfile.read()
         print contents
         lastfile.close()
