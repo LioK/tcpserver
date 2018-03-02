@@ -5,10 +5,6 @@ import time
 from cmd import Cmd
 
 
-filecount = 0
-connection = None
-
-
 class server(Cmd):
     '''Simple TCP server class'''
     prompt = '> '
